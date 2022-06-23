@@ -1,0 +1,27 @@
+footer{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+
+    .footer-links-container{
+        margin: auto;
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        span{
+            color: $muted-text-color;
+            font-size: 12px;
+        }
+        a {
+            color: $text-color;
+            font-size: 12px;
+            font-weight: $font-bold;
+            transition: ease 0.3s;
+            &:hover{
+                color: $muted-text-color;
+            }
+        }
+    }
+}
+

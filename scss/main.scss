@@ -1,0 +1,16 @@
+@import './partials/config';
+@import './partials/base';
+@import './partials/navbar';
+@import './partials/subsection';
+@import './partials/footer';
+
+body {
+    font-weight: $font-regular;
+    font-family: $font-main, sans-serif;
+    background-color: $body-bg-color;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
