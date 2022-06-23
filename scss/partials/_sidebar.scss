@@ -1,0 +1,63 @@
+.sidebar{
+    position: absolute;
+    right: -10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    width: 0;
+    display: none;
+    padding: 100px 50px; 
+    text-align: right;
+    color: $text-color;
+    animation: sidebar-fadein 0.5s 1;
+    
+    a{
+        color: $text-color;
+        transition: ease 0.3s;
+        &:hover{
+            color: $muted-text-color;
+        }
+    }
+
+    @for $i from 1 through 6 {
+        :nth-child(#{$i}n){
+            padding: 12px 0;
+            border-bottom: 1px solid #FFFFFF30;
+            width: 100%;
+            animation: fadeIn #{$i * 0.3}s 1; 
+        }
+    }
+}
+
+.sidebar-active{
+    display: block;
+    width: 350px;
+}
+
+.sidebar-active-close div{
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        padding-top: 25px;
+    } 100% {
+        opacity: 1;
+        padding-top: 12px;
+    }
+}
+
+@keyframes sidebar-fadein {
+    0% {
+        width: 0px;
+    } 100% {
+        width: 350px;
+    }
+}
+
+.body-reduce-opacity{
+
+}

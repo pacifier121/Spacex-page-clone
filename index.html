@@ -12,24 +12,58 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./script.js" type="text/javascript"></script>
   </head>
   <body>
-    <nav>
-      <div id="nav" class="nav-container container">
-        <div class="company-logo"><img src="./images/spacex.svg" alt="" /></div>
+    <div id="sidebar" class="sidebar">
+      <div><a>MISSION</a></div>
+      <div><a>LAUNCHES</a></div>
+      <div><a>CAREERS</a></div>
+      <div><a>UPDATES</a></div>
+      <div><a>SHOP</a></div>
+    </div>
+    <nav id="nav">
+      <div class="nav-container container">
+        <div class="company-logo">
+          <a href=""><img src="./images/spacex.svg" alt="" /></a>
+        </div>
         <div class="nav-links">
-          <span>FALCON 9</span>
-          <span>FALCON HEAVY</span>
-          <span>DRAGON</span>
-          <span>STARSHIP</span>
-          <span>HUMAN SPACEFLIGHT</span>
-          <span>RIDESHARE</span>
-          <span>STARLINK</span>
-          <span class="nav-links-enditem">SHOP</span>
-          <div class="hamburger-btn">
+          <div class="link-wrapper">
+            <a>FALCON 9</a>
             <div></div>
+          </div>
+          <div class="link-wrapper">
+            <a>FALCON HEAVY</a>
             <div></div>
+          </div>
+          <div class="link-wrapper">
+            <a>DRAGON</a>
             <div></div>
+          </div>
+          <div class="link-wrapper">
+            <a>STARSHIP</a>
+            <div></div>
+          </div>
+          <div class="link-wrapper">
+            <a>HUMAN SPACEFLIGHT</a>
+            <div></div>
+          </div>
+          <div class="link-wrapper">
+            <a>RIDESHARE</a>
+            <div></div>
+          </div>
+          <div class="link-wrapper">
+            <a>STARLINK</a>
+            <div></div>
+          </div>
+          <div class="link-wrapper nav-links-enditem">
+            <a>SHOP</a>
+            <div></div>
+          </div>
+          <div id="sidebar-btn" class="hamburger-btn">
+            <div class="div1"></div>
+            <div class="remove-me"></div>
+            <div class="div2"></div>
           </div>
         </div>
       </div>
@@ -115,16 +149,16 @@
       </div>
     </main>
     <footer>
-        <div class="footer-links-container">
-            <span>SPACEX © 2022</span>
-            <a href="#">TWITTER</a>
-            <a href="#">YOUTUBE</a>
-            <a href="#">INSTAGRAM</a>
-            <a href="#">FLICKR</a>
-            <a href="#">LINKEDIN</a>
-            <a href="#">PRIVACY POLICY</a>
-            <a href="#">SUPPLIERS</a>
-        </div>
+      <div class="footer-links-container">
+        <span>SPACEX © 2022</span>
+        <a href="#">TWITTER</a>
+        <a href="#">YOUTUBE</a>
+        <a href="#">INSTAGRAM</a>
+        <a href="#">FLICKR</a>
+        <a href="#">LINKEDIN</a>
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">SUPPLIERS</a>
+      </div>
     </footer>
   </body>
 </html>

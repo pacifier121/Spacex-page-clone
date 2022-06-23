@@ -3,11 +3,13 @@
 @import './partials/navbar';
 @import './partials/subsection';
 @import './partials/footer';
+@import './partials/sidebar';
 
 body {
     font-weight: $font-regular;
     font-family: $font-main, sans-serif;
     background-color: $body-bg-color;
+    transition: ease 1s;
 }
 
 main{
